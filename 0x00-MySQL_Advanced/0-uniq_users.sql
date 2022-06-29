@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS users (
-id integer auto increment not null primary key,
-email char(255) not null unique,
-name char(255));
+id int NULL AUTO_INCREMENT PRIMARY KEY,
+email VARCHAR(255) not null unique,
+name VARCHAR(255));
 
