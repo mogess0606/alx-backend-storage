@@ -1,5 +1,8 @@
-CREATE TABLE IF NOT EXISTS users(
-id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
-email VARCHAR(255) NOT NULL UNIQUE,
-name VARCHAR(255),
-country ENUM('US','CO','TN') DEFAULT 'US'); 
+-- Creates users table on any db
+
+CREATE TABLE IF NOT EXISTS users (
+       id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+       email varchar(255) NOT NULL UNIQUE,
+       name varchar(255),
+       country ENUM ('US', 'CO', 'TN') NOT NULL
+)
